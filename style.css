@@ -1,0 +1,47 @@
+
+.hebergements-a-marseille
+{
+    width: 700px; /* largeur */
+    border-radius: 10px; /* angles arrondis */
+    background: #c7c1c1;  
+}
+.hebergements-a-marseille h2
+{
+    margin-bottom: 0px;
+    padding : 10px 10px 10px 22px;
+}
+.conteneur1
+{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* pour que les bloc aillent à la ligne quand ils n'ont plus de place */
+    justify-content: center;
+    
+}
+.item-hebergement
+{
+    background: #ffffff;
+    border-radius: 10px;
+    width: 28%;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.conteneur1 img
+{
+    
+    width: 100%;
+    border-radius: 10px 10px 0px 0px
+    
+    
+}
+.carte-image1
+{
+    
+    width: 100%;
+    height: 110px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    
+}
