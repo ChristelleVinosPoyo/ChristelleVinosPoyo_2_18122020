@@ -1,9 +1,19 @@
 
+/* ---------------------------------section 2 : Hébergements---------------------------------- */
+
+.section2
+{
+    width: 1200px;
+    display: flex;
+}
+
 .hebergements-a-marseille
 {
-    width: 700px; /* largeur */
+    width: 800px; /* largeur */
     border-radius: 10px; /* angles arrondis */
-    background: #c7c1c1;  
+    background: #e0e0e0;  
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .hebergements-a-marseille h2
 {
@@ -17,13 +27,12 @@
     display: flex;
     flex-wrap: wrap; /* pour que les bloc aillent à la ligne quand ils n'ont plus de place */
     justify-content: center;
-    
 }
 .item-hebergement
 {
     background: #ffffff;
     border-radius: 10px;
-    width: 28%;
+    width: 150px;
     margin: 10px;
     padding: 5px;
     
@@ -44,4 +53,45 @@
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     
+}
+.les-plus-populaires
+{
+    width: 400px;
+    border-radius: 10px; /* angles arrondis */
+    background: #e0e0e0;  
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+.les-plus-populaires h2
+{
+    margin-bottom: 0px;
+    padding : 10px 10px 10px 22px;
+    
+}
+.item-populaires
+{
+    background: #ffffff;
+    border-radius: 10px;
+    width: 180px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+}
+.conteneur2
+{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* pour que les bloc aillent à la ligne quand ils n'ont plus de place */
+    justify-content: center;
+}
+.carte-image2
+{
+    
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+
 }
