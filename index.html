@@ -4,171 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">       
     <title>Réservia</title>
 </head>
 <body>
-<!-----------------------header------------------------------------------------------->
-    <header>
-        
-        <img src="images/logo/Reservia.svg" alt="">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h4>En plein centre ville ou en pleine nature</h4>
-        <nav>
-            <ul>
-                <li><a href="#">Hébergement</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
-            </ul>
-        </nav>
 
-    </header>
+<div id="bloc-page">
 
-<!----------------section 1: Recherche------------------------------------------------->  
-
-<!----------------section 2 : hebergements--------------------------------------------->  
-    <section id="section2">
-        
-        <div id="hebergements-a-marseille">
+    <!-----------------------header------------------------------------------------------->
+    
+        <header>
             
-            <h2>Hébergements à Marseille</h2>
-            <div id=conteneur1>
+            
+            <nav>
+                <ul>
+                    <li><img src="images/logo/Reservia.svg" alt=""></li>
+                    <li><a href="#">Hébergement</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h4>En plein centre ville ou en pleine nature</h4>
+        </header>
+
+    <!----------------section 1: Recherche------------------------------------------------->  
+
+        <form method="POST" action="traitement.php">
+            <p>
+                <img id="icone-localisation" src="icones/map-marker-alt-solid.svg" alt="icone localisation"><i class="fas fa-map-marker-alt"></i>
+                <input id="search" type="search" name="recherche" placeholder="Marseille, France" autofocus required>
+                <input id="rechercher" type="submit" value="Rechercher">
+            </p>
+        </form>
+
+    <!----------------section 2 : hebergements--------------------------------------------->  
+        <section id="section2">
+            
+            <div id="hebergements-a-marseille">
                 
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
-                    </div>
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="lits supperposés">
-                    </div>
+                <h2>Hébergements à Marseille</h2>
+                <div id=conteneur1>
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        </div>
                         <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
                     </div>
-                        <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                            <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
                     </div>
-                        <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                            <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
                     </div>
-                        <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-hebergement>
-                    <div class="carte-image1">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                            <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
                     </div>
-                        <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <!--icones étoiles-->
-                </div>        
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                            <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
+                    </div>
+                    
+                    <div class=item-hebergement>
+                        <div class="carte-image1">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                            <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <!--icones étoiles-->
+                    </div>        
+                </div>
+            </div>
+            
+            <div id="les-plus-populaires">
+                <h2>Les plus populaires</h2>
+                <div id="conteneur2">
+                    <div class=item-populaires>
+                        
+                        <div class="carte-image2">
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                        <div class="contenu-item-populaire">
+                            <h3>Hotel le soleil du matin</h3>
+                            <p>Nuit à partir de <strong>128€</strong></p>
+                        </div>
+                        <!--icones étoiles-->
+                    </div>
+                    
+                    <div class=item-populaires>
+                        
+                        <div class="carte-image2">
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                        <div class="contenu-item-populaire">
+                            <h3>Hotel le soleil du matin</h3>
+                            <p>Nuit à partir de <strong>128€</strong></p>
+                        </div>
+                        <!--icones étoiles-->
+                    </div>
+
+                    <div class=item-populaires>
+                        
+                        <div class="carte-image2">
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="lits supperposés">
+                        </div>
+                        <div class="contenu-item-populaire">
+                            <h3>Hotel le soleil du matin</h3>
+                            <p>Nuit à partir de <strong>128€</strong></p>
+                        </div>
+                        <!--icones étoiles-->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>   
+    <!----------------section 3 : Activités--------------------------------->  
+
+        <div class="activites-a-marseille">
+            <h2>Activités à Marseille</h2>
+            <div class=item-activites>
+                <div class="carte-image3">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                </div>
+                <h3>Vieux port</h3>
             </div>
         </div>
-        
-        <div id="les-plus-populaires">
-            <h2>Les plus populaires</h2>
-            <div id="conteneur2">
-                <div class=item-populaires>
-                    
-                    <div class="carte-image2">
-                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="lits supperposés">
-                    </div>
-                    <div class="contenu-item-populaire">
-                        <h3>Hotel le soleil du matin</h3>
-                        <p>Nuit à partir de <strong>128€</strong></p>
-                    </div>
-                    <!--icones étoiles-->
-                </div>
-                
-                <div class=item-populaires>
-                    
-                    <div class="carte-image2">
-                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="lits supperposés">
-                    </div>
-                    <div class="contenu-item-populaire">
-                        <h3>Hotel le soleil du matin</h3>
-                        <p>Nuit à partir de <strong>128€</strong></p>
-                    </div>
-                    <!--icones étoiles-->
-                </div>
 
-                <div class=item-populaires>
-                    
-                    <div class="carte-image2">
-                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="lits supperposés">
-                    </div>
-                    <div class="contenu-item-populaire">
-                        <h3>Hotel le soleil du matin</h3>
-                        <p>Nuit à partir de <strong>128€</strong></p>
-                    </div>
-                    <!--icones étoiles-->
-                </div>
+    <!----------------footer------------------------------------------------->  
 
-
+        <footer>
+            <div class="item-footer">
+                <h3>à propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
             </div>
-        </div>
-    </section>   
-<!----------------section 3 : Activités--------------------------------->  
-
-    <div class="activites-a-marseille">
-        <h2>Activités à Marseille</h2>
-        <div class=item-activites>
-            <div class="carte-image3">
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+            <div class="item-footer">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
             </div>
-            <h3>Vieux port</h3>
-        </div>
-    </div>
+            <div class="item-footer">
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
 
-<!----------------footer------------------------------------------------->  
-
-    <footer>
-        <div class="item-footer">
-            <h3>à propos</h3>
-            <ul>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </div>
-        <div class="item-footer">
-            <h3>Nos hébergements</h3>
-            <ul>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-        </div>
-        <div class="item-footer">
-            <h3>Assistance</h3>
-            <ul>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </div>
-    </footer>
+</div>
 </body>
 </html>

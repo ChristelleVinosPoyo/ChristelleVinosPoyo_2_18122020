@@ -1,4 +1,54 @@
 
+
+body
+{
+    font-family: 'Raleway', Arial, sans-serif;
+}
+#bloc-page
+{
+    width: 1300px;
+    margin: auto;
+}
+
+/* -----------------------------------------header---------------------------------------- */
+ul 
+{
+    list-style-type: none; /* pour enlever les puces */
+}
+
+nav ul
+{
+    display: flex;
+}
+nav li
+{
+    margin-right: 15px; /* de la marge pour séparer les éléments du menu */
+
+}
+
+/* ---------------------------------section 1 : Recherche---------------------------------- */
+
+#icone-localisation
+{
+    width: 10px;
+    background: #F2F2F2;  
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    }
+#search
+{
+    padding: 10px;
+    height: 30px;
+    border: #F2F2F2 solid 1px;
+    box-shadow: none;
+    }
+#rechercher
+{
+    background: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+}
+
 /* ---------------------------------section 2 : Hébergements---------------------------------- */
 
 #section2
@@ -11,7 +61,7 @@
 {
     width: 800px; /* largeur */
     border-radius: 10px; /* angles arrondis */
-    background: #e0e0e0;  
+    background: #F2F2F2;  
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -58,7 +108,7 @@
 {
     width: 400px;
     border-radius: 10px; /* angles arrondis */
-    background: #e0e0e0;  
+    background: #F2F2F2;  
     justify-content: center;
     flex-wrap: wrap;  
     margin-left: 30px;
@@ -109,6 +159,16 @@
 #conteneur2 img
 {
     height: 100%; 
-    border-radius: 10px 0px 0px 10px;
-    
+    border-radius: 10px 0px 0px 10px;    
+}
+/* ------------------------------------footer-------------------------------------- */
+footer
+{
+    background: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-footer
+{
+    flex-wrap: wrap;
 }
