@@ -1,13 +1,13 @@
 
 /* ---------------------------------section 2 : Hébergements---------------------------------- */
 
-.section2
+#section2
 {
     width: 1200px;
     display: flex;
 }
 
-.hebergements-a-marseille
+#hebergements-a-marseille
 {
     width: 800px; /* largeur */
     border-radius: 10px; /* angles arrondis */
@@ -15,12 +15,12 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.hebergements-a-marseille h2
+#hebergements-a-marseille h2
 {
     margin-bottom: 0px;
     padding : 10px 10px 10px 22px;
 }
-.conteneur1
+#conteneur1
 {
     width: 100%;
     border-radius: 10px;
@@ -37,7 +37,7 @@
     padding: 5px;
     
 }
-.conteneur1 img
+#conteneur1 img
 {
     
     width: 100%;
@@ -54,15 +54,16 @@
     overflow: hidden;
     
 }
-.les-plus-populaires
+#les-plus-populaires
 {
     width: 400px;
     border-radius: 10px; /* angles arrondis */
     background: #e0e0e0;  
     justify-content: center;
     flex-wrap: wrap;  
+    margin-left: 30px;
 }
-.les-plus-populaires h2
+#les-plus-populaires h2
 {
     margin-bottom: 0px;
     padding : 10px 10px 10px 22px;
@@ -72,13 +73,14 @@
 {
     background: #ffffff;
     border-radius: 10px;
-    width: 180px;
-    height: 100px;
+    width: 300px;
+    height: 120px;
     margin: 10px;
     padding: 5px;
-    display: flex;
+    position: relative;
+    
 }
-.conteneur2
+#conteneur2
 {
     width: 100%;
     border-radius: 10px;
@@ -93,5 +95,20 @@
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
-
+    position: absolute;
+    z-index: 2;
+    
+}
+.contenu-item-populaire
+{
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    right: 5px;
+}
+#conteneur2 img
+{
+    height: 100%; 
+    border-radius: 10px 0px 0px 10px;
+    
 }
