@@ -10,26 +10,33 @@ body
     width: 1300px;
     margin: auto;
 }
-a
+a, a:hover, a:visited, a:active /* pour enlever la mise en forme des liens */
 {
-    color: black;
+	color:#000;
+	text-decoration:none;
 }
 
 /* -----------------------------------------header---------------------------------------- */
 ul 
 {
     list-style-type: none; /* pour enlever les puces */
+
 }
+nav a
+{
+    margin: 50px;
+    margin-top: 100px;
+}
+
 
 nav ul
 {
     display: flex;
+    justify-content: flex-end;
 }
-nav li
-{
-    margin-right: 15px; /* de la marge pour séparer les éléments du menu */
 
-}
+
+
 
 /* ---------------------------------section 1 : Recherche---------------------------------- */
 
@@ -206,6 +213,8 @@ nav li
 {
     margin-left: 0px;
 }
+
+
 
 /* ------------------------------------footer-------------------------------------- */
 footer
