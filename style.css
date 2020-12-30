@@ -155,6 +155,7 @@ nav li
     border-radius: 20px; /* angles arrondis */
     background: #F2F2F2;  
     justify-content: center;
+    padding-bottom: 20px;
     flex-wrap: wrap;
 }
 #hebergements-a-marseille h2
@@ -176,8 +177,16 @@ nav li
     border-radius: 20px;
     width: 190px;
     height: auto;
-    margin: 10px;
+    margin: 10px 15px 15px 15px;
     padding: 5px;
+}
+.item-hebergement .fa-star
+{
+    margin-bottom: 5px;
+}
+.contenu-item-hebergement
+{
+    margin-left: 10px;
     
 }
 #conteneur1 img
@@ -195,6 +204,17 @@ nav li
     overflow: hidden;
     
 }
+
+.header-les-plus-populaires
+{
+    position: relative;
+}
+.fa-chart-line
+{
+    position: absolute;
+    top : 10px;
+    right : 20px;
+}
 #les-plus-populaires
 {
     width: 400px;
@@ -204,7 +224,7 @@ nav li
     flex-wrap: wrap;  
     margin-left: 30px;
 }
-#les-plus-populaires h2
+#les-plus-populaires h2, .afficher-plus
 {
     margin-bottom: 0px;
     padding : 10px 10px 10px 22px;
@@ -215,19 +235,24 @@ nav li
     background: #ffffff;
     border-radius: 20px;
     width: 300px;
-    height: 120px;
-    margin: 10px;
+    height: 140px;
+    margin: 10px 15px 15px 15px;
     padding: 5px;
     position: relative;
     
+}
+.item-populaires .fa-star
+{
+    margin-top: 15px;
 }
 #conteneur2
 {
     width: 100%;
     border-radius: 20px;
     display: flex;
-    flex-wrap: wrap; /* pour que les bloc aillent à la ligne quand ils n'ont plus de place */
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .carte-image2
 {
@@ -236,8 +261,6 @@ nav li
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
-    position: absolute;
-    z-index: 2;
 }
 
 .contenu-item-populaire
@@ -245,8 +268,10 @@ nav li
     position: absolute;
     z-index: 3;
     width: 50%;
-    right: 5px;
+    top: 5px;
+    right: 10px;    
 }
+
 #conteneur2 img
 {
     height: 100%; 
@@ -287,7 +312,6 @@ nav li
     height: 400px;
     margin: 10px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-
 }
 .carte-image3
 {
@@ -295,7 +319,6 @@ nav li
     width: 100%;
     height: 360px;
     overflow: hidden;
-}
 }
 .item-activites img
 {
