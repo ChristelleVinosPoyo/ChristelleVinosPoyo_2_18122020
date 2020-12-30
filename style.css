@@ -17,6 +17,15 @@ a, a:hover, a:visited, a:active /* pour enlever la mise en forme des liens */
 }
 
 /* -----------------------------------------header---------------------------------------- */
+header
+{
+    display: flex;
+}
+#logo
+{
+    width: 50%;
+    padding-right: 50%;
+}
 ul 
 {
     list-style-type: none; /* pour enlever les puces */
@@ -34,31 +43,102 @@ nav ul
     display: flex;
     justify-content: flex-end;
 }
+.link-blue
+{
+    color: #0065FC;
+}
+nav li
+{
+    margin-top: 20px;
+}
+
 
 
 
 
 /* ---------------------------------section 1 : Recherche---------------------------------- */
 
-#icone-localisation
+.fa-map-marker-alt
 {
     width: 10px;
     background: #F2F2F2;  
-    padding: 10px;
-    border-radius: 20px 0px 0px 20px;
-    }
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+}
 #search
 {
     padding: 10px;
-    height: 30px;
+    height: 35px;
     border: #F2F2F2 solid 1px;
     box-shadow: none;
+    font-weight : bold;
     }
 #rechercher
 {
     background: #0065FC;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
     padding: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight : bold;
+}
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    color: #0065FC;
+    background: #DEEBFF;
+    font-size: 1.3em;
+    padding: 15px;
+    border-radius: 50%;
+}
+.fa-info
+{
+    color: #0065FC;
+    border-radius: 50%;
+    border: solid #F2F2F2 1px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.filtre
+{
+    position: relative;
+    border: solid 3px #F2F2F2;
+    border-radius: 30px;
+    margin-right: 20px;
+}    
+
+#section-filtre h4
+{
+    font-size: 1.3em;
+    font-weight : bold;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filtre .fas
+{
+    position : absolute;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+
+.filtre-type
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.filtre:hover
+{
+    border: solid 3px #DEEBFF;
+    background: #DEEBFF;
+    
+}
+#section-filtre
+{
+    display: flex;
 }
 
 /* ---------------------------------section 2 : Hébergements---------------------------------- */
@@ -175,6 +255,18 @@ nav ul
 #image3
 {
     width: 100%;
+}
+.star-blue
+{
+    color: #0065FC;
+}
+.star-grey
+{
+    color: #F2F2F2;
+}
+.fa-chart-line
+{
+    font-size: 1.8em;
 }
 /* ---------------------------------section 3 : Activités---------------------------------- */
 

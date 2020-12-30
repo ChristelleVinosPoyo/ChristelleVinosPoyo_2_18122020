@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">       
+    <!--  pour utiliser la police Raleway de Google : -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!--  pour utiliser les polices de caractère Font Awesome : -->
+    <script src="https://kit.fontawesome.com/b9eab8314a.js" crossorigin="anonymous"></script>    
     <title>Réservia</title>
 </head>
 <body>
@@ -16,28 +19,55 @@
     
         <header>
                         
-            
+            <img id="logo" src="images/logo/Reservia.svg" alt="logo Réservia">
             <nav>
                 <ul>
-                    <li><img id="logo" src="images/logo/Reservia.svg" alt=""></li>
-                    <li><a class="element-menu" href="#">Hébergement</a></li>
+                    <li><a class="element-menu link-blue" href="#">Hébergement</a></li>
                     <li><a class="element-menu" href="#">Activités</a></li>
-                    <li><a class="element-menu" href="#">S'inscrire</a></li>
+                    <li><a class="element-menu link-blue" href="#">S'inscrire</a></li>
                 </ul>
             </nav>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h4>En plein centre ville ou en pleine nature</h4>
+            
         </header>
 
     <!----------------section 1: Recherche------------------------------------------------->  
 
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h4>En plein centre ville ou en pleine nature</h4>
         <form method="POST" action="traitement.php">
             <p>
-                <img id="icone-localisation" src="icones/map-marker-alt-solid.svg" alt="icone localisation"><i class="fas fa-map-marker-alt"></i>
-                <input id="search" type="search" name="recherche" placeholder="Marseille, France" autofocus required>
+                <i class="fas fa-map-marker-alt"></i>
+                <input id="search" type="search" name="recherche" value="Marseille, France" required>
                 <input id="rechercher" type="submit" value="Rechercher">
             </p>
         </form>
+
+        <div id="section-filtre">
+            
+            <h4>Filtres</h4>
+            
+            <div class="filtre">
+                <i class="fas fa-money-bill-wave"></i>
+                <h4 class="filtre-type">Economique</h4>                
+                   
+            </div>
+            <div class="filtre">
+                <i class="fas fa-child"></i>
+                <h4 class="filtre-type">Familial</h4>
+            </div>
+            <div class="filtre">
+                <i class="fas fa-heart"></i>
+                <h4 class="filtre-type">Romantique</h4>
+            </div>
+            <div class="filtre">
+                <i class="fas fa-dog"></i>
+                <h4 class="filtre-type">Animaux autorisés</h4>
+            </div>
+        </div>
+
+        <p>
+            <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+        </p>
 
     <!----------------section 2 : hebergements--------------------------------------------->  
         <section id="section2">
@@ -54,7 +84,7 @@
                             </div>
                             <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i>
                         </div>
                     </a>    
                     
@@ -65,7 +95,7 @@
                             </div>
                                 <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i>
                         </div>
                     </a>   
                     
@@ -76,7 +106,7 @@
                             </div>
                                 <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i>
                         </div>
                     </a>   
                     
@@ -87,7 +117,7 @@
                             </div>
                                 <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i><i class="fas fa-star star-grey"></i>
                         </div>
                     </a>    
                     
@@ -98,7 +128,7 @@
                             </div>
                                 <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i>
                         </div>
                     </a>
                     
@@ -110,7 +140,7 @@
                             </div>
                                 <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de <strong>25€</strong></p>
-                            <!--icones étoiles-->
+                            <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i>
                         </div>  
                     </a>
                 </div>
@@ -118,7 +148,7 @@
             </div>
             
             <div id="les-plus-populaires">
-                <h2>Les plus populaires</h2>
+                <h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
                 <div id="conteneur2">
                                             
                     <a href="#">
@@ -130,8 +160,8 @@
                             <div class="contenu-item-populaire">
                                 <h3>Hotel le soleil du matin</h3>
                                 <p>Nuit à partir de <strong>128€</strong></p>
+                                <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i>
                             </div>
-                            <!--icones étoiles-->
                         </div>
                     </a> 
 
@@ -144,8 +174,8 @@
                             <div class="contenu-item-populaire">
                                 <h3>Hotel le soleil du matin</h3>
                                 <p>Nuit à partir de <strong>128€</strong></p>
+                                <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i>
                             </div>
-                            <!--icones étoiles-->
                         </div>
                     </a>
 
@@ -158,8 +188,8 @@
                             <div class="contenu-item-populaire">
                                 <h3>Hotel le soleil du matin</h3>
                                 <p>Nuit à partir de <strong>128€</strong></p>
+                                <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-grey"></i>
                             </div>
-                            <!--icones étoiles-->
                         </div>
                     </a>
 
