@@ -13,12 +13,14 @@ body
     margin: auto;
 }
 
+
 a, a:hover, a:visited, a:active /* pour enlever la mise en forme des liens */
 {
 	
     text-decoration:none;
     
 }
+
 
 /* -----------------------------------------header---------------------------------------- */
 header
@@ -49,12 +51,16 @@ nav ul
 
 nav li
 {
-    margin-top: 20px;
+    height: 100%;
+    padding-top: 20px;
 }
 .bleu 
 {
     color: #0065FC;
-    
+}
+nav li:hover
+{
+    border-top: #0065FC 3px solid;
 }
 
 
@@ -66,7 +72,6 @@ nav li
 #section1
 {
     width: 100%;
-    
 }
 
 .fa-map-marker-alt
@@ -162,7 +167,7 @@ nav li
 
 #hebergements-a-marseille
 {
-    width: 60%; /* largeur */
+    width: 70%; /* largeur */
     border-radius: 20px; /* angles arrondis */
     background: #F2F2F2;  
     justify-content: center;
@@ -182,6 +187,14 @@ nav li
     flex-wrap: wrap; /* pour que les bloc aillent à la ligne quand ils n'ont plus de place */
     justify-content: center;
 }
+#conteneur1 img
+{
+    width: 100%;
+}
+.images-X-30
+{
+    transform: translate(0, -30%);
+}
 .item-hebergement
 {
     background: #ffffff;
@@ -190,6 +203,7 @@ nav li
     height: auto;
     margin: 10px 15px 15px 15px;
     padding: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .item-hebergement .fa-star
 {
@@ -200,21 +214,14 @@ nav li
     margin-left: 10px;
     
 }
-#conteneur1 img
-{
-    
-    width: 100%;
-    border-radius: 20px 20px 0px 0px    
-}
 .carte-image1
 {
-    
     width: 100%;
     height: 160px;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
-    
 }
+
 
 .header-les-plus-populaires
 {
@@ -250,7 +257,7 @@ nav li
     margin: 10px 15px 15px 15px;
     padding: 5px;
     position: relative;
-    
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);    
 }
 .item-populaires .fa-star
 {
@@ -264,6 +271,15 @@ nav li
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#conteneur2img1, #conteneur2img2
+{
+    height: 100%;
+}
+#conteneur2img3
+{
+    width: 100%;
+    transform: translate(0, -20%);
 }
 .carte-image2
 {
@@ -283,15 +299,6 @@ nav li
     right: 10px;    
 }
 
-#conteneur2 img
-{
-    height: 100%; 
-    border-radius: 20px 0px 0px 20px;    
-}
-#image3
-{
-    width: 100%;
-}
 .star-blue
 {
     color: #0065FC;
@@ -313,14 +320,14 @@ nav li
 #conteneur3
 {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+    height: 500px;
 }
 .item-activites
 {
     border-radius: 20px;
-    width: 320px;
+    width: 380px;
     margin: 10px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -341,13 +348,47 @@ nav li
     height: 90%;
     overflow: hidden;
 }
-
-.item-activites img
+.hauteur60
+{
+    height: 60%;
+}
+.hauteur40
+{
+    height: 40%;
+}
+.hauteur100
 {
     height: 100%;
 }
-
-
+#conteneurA, #conteneurB
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#conteneur3img1
+{
+    height: 100%;
+}
+#conteneur3img2
+{
+    width: 100%;
+    transform: translate(0, -20%);
+}
+#conteneur3img3
+{
+    width: 100%;
+    transform: translate(0, -10%);
+}
+#conteneur3img4
+{
+    height: 100%;
+    transform: translate(-30%, 0);
+}
+#conteneur3img5, #conteneur3img6
+{
+    width: 100%;
+}
 
 
 /* ------------------------------------footer-------------------------------------- */
