@@ -13,14 +13,12 @@ body
     margin: auto;
 }
 
-
 a, a:hover, a:visited, a:active /* pour enlever la mise en forme des liens */
 {
 	
     text-decoration:none;
     
 }
-
 
 /* -----------------------------------------header---------------------------------------- */
 header
@@ -73,6 +71,10 @@ nav li:hover
 {
     width: 100%;
 }
+h1
+{
+    font-weight :bold;
+}
 
 .fa-map-marker-alt
 {
@@ -119,7 +121,7 @@ nav li:hover
     position: relative;
     border: solid 3px #F2F2F2;
     border-radius: 30px;
-    margin-right: 20px;
+    margin: 0px 20px 20px 0px;
 }    
 
 #section-filtre h4
@@ -155,6 +157,7 @@ nav li:hover
 #section-filtre
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* ---------------------------------section 2 : Hébergements---------------------------------- */
@@ -170,9 +173,7 @@ nav li:hover
     width: 70%; /* largeur */
     border-radius: 20px; /* angles arrondis */
     background: #F2F2F2;  
-    justify-content: center;
     padding-bottom: 20px;
-    flex-wrap: wrap;
 }
 #hebergements-a-marseille h2
 {
@@ -235,11 +236,10 @@ nav li:hover
 }
 #les-plus-populaires
 {
-    width: 550px;
+    width: 30%;
     border-radius: 20px; /* angles arrondis */
     background: #F2F2F2;  
-    justify-content: center;
-    flex-wrap: wrap;  
+
     margin-left: 50px;
 }
 #les-plus-populaires h2, .afficher-plus
@@ -250,11 +250,12 @@ nav li:hover
 }
 .item-populaires
 {
+
+       
     background: #ffffff;
     border-radius: 20px;
-    width: 450px;
+    width: 85%;
     height: 180px;
-    margin: 10px 15px 15px 15px;
     padding: 5px;
     position: relative;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);    
@@ -266,7 +267,7 @@ nav li:hover
 #conteneur2
 {
     width: 100%;
-    border-radius: 20px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +275,8 @@ nav li:hover
 }
 #conteneur2img1, #conteneur2img2
 {
-    height: 100%;
+    width: 100%;
+    transform: scale(2.2, 2.2);
 }
 #conteneur2img3
 {
@@ -322,7 +324,7 @@ nav li:hover
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 .item-activites
 {
@@ -350,15 +352,15 @@ nav li:hover
 }
 .hauteur60
 {
-    height: 60%;
+    height: 300px;
 }
 .hauteur40
 {
-    height: 40%;
+    height: 200px;
 }
 .hauteur100
 {
-    height: 100%;
+    height: 500px;
 }
 #conteneurA, #conteneurB
 {

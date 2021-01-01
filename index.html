@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <!--  pour lier le fichier css responsive : -->
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite-resolution.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--  pour utiliser la police Raleway de Google : -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -22,9 +24,9 @@
             <img id="logo" src="images/logo/Reservia.svg" alt="logo Réservia">
             <nav>
                 <ul>
-                    <li><a class="element-menu bleu" href="#section2">Hébergement</a></li>
-                    <li><a class="element-menu" href="#section3">Activités</a></li>
-                    <li><a class="element-menu bleu" href="#">S'inscrire</a></li>
+                    <li class="menu-hebergement bleu"><a class="element-menu bleu" href="#section2">Hébergement</a></li>
+                    <li class="menu-activités"><a class="element-menu" href="#section3">Activités</a></li>
+                    <li class="menu-sinscrire"><a class="element-menu bleu" href="#">S'inscrire</a></li>
                 </ul>
             </nav>
             
@@ -34,7 +36,7 @@
         <section id="section1">
 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h4>En plein centre ville ou en pleine nature</h4>
+            <p>En plein centre ville ou en pleine nature</p>
             <form method="POST" action="traitement.php">
                 <p>
                     <i class="fas fa-map-marker-alt"></i>
