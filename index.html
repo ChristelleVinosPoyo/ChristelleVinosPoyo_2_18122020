@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <!--  pour lier le fichier css responsive : -->
-    <link rel="stylesheet" media="all and (max-width: 1280px)" href="petite-resolution.css" />
+    <link rel="stylesheet" href="petite-resolution.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--  pour utiliser la police Raleway de Google : -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -30,7 +30,6 @@
                 </ul>
             </nav>           
             
-        
         </header>
 
         <!-----  Nav pour version mobile  -------->
@@ -45,14 +44,12 @@
         <section id="section1">
 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <p id="sous-titre">En plein centre ville ou en pleine nature</p>
             <form method="POST" action="traitement.php">
-                <p>
                     <i class="fas fa-map-marker-alt"></i>
                     <input id="search" type="search" name="recherche" value="Marseille, France" required>
                     <input id="rechercher" type="submit" value="Rechercher">
-                    <input id="rechercher-version-mobile" type="submit" value=" ">
-                </p>
+                    <button id="rechercher-version-mobile" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
             <div id="section-filtre">
@@ -60,12 +57,11 @@
                 <h4>Filtres</h4>
                 
                 <div class="filtre">
-                    <i class="fas fa-money-bill-wave" id="fa-money-bill-wave"></i>
+                    <i class="fas fa-money-bill-wave"></i>
                     <h4 class="filtre-type">Economique</h4>                
-                    
                 </div>
                 <div class="filtre">
-                    <i class="fas fa-child" id="fa-child"></i>
+                    <i class="fas fa-child"></i>
                     <h4 class="filtre-type">Familial</h4>
                 </div>
                 <div class="filtre">
@@ -73,7 +69,7 @@
                     <h4 class="filtre-type">Romantique</h4>
                 </div>
                 <div class="filtre">
-                    <i class="fas fa-dog" id="fa-dog"></i>
+                    <i class="fas fa-dog"></i>
                     <h4 class="filtre-type">Animaux autorisés</h4>
                 </div>
             </div>
@@ -119,7 +115,7 @@
                     <a href="#">
                         <div class="item-hebergement">
                             <div class="carte-image1">
-                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="lits supperposés">
+                                <img id="conteneur1img3" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="lits supperposés">
                             </div>
                             <div class="contenu-item-hebergement">
                                 <h3>Hôtel Les mouettes</h3>
@@ -132,7 +128,7 @@
                     <a href="#">
                         <div class="item-hebergement">
                             <div class="carte-image1">
-                                <img class="images-X-30" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="lits supperposés">
+                                <img id="conteneur1img4" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="lits supperposés">
                             </div>
                             <div class="contenu-item-hebergement">
                                 <h3>Hôtel de la mer</h3>
@@ -159,7 +155,7 @@
                         <div class="item-hebergement">
                             
                             <div class="carte-image1">
-                                <img class="images-X-30" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="lits supperposés">
+                                <img id="conteneur1img6" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="lits supperposés">
                             </div>
                             <div class="contenu-item-hebergement">
                                 <h3>Hôtel chez Amina</h3>
@@ -232,7 +228,7 @@
             
             <div id="conteneur3">
                 
-                <div class="item-activites hauteur100">
+                <div class="item-activites item-vieux-port hauteur100">
                     <div class="carte-image3">
                         <img id="conteneur3img1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                     </div>
@@ -243,7 +239,7 @@
                         <div class="carte-image3">
                             <img id="conteneur3img2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="vieux port">
                         </div>
-                        <h3>Fort de Pomègue</h3>
+                        <h3>Fort de Pomègues</h3>
                     </div>
 
                     <div class="item-activites hauteur40">
@@ -254,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="item-activites hauteur100">
+                <div class="item-activites item-parc-national hauteur100">
                     <div class="carte-image3">
                         <img id="conteneur3img4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vieux port">
                     </div>
