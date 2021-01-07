@@ -36,18 +36,15 @@ header
 ul 
 {
     list-style-type: none; /* pour enlever les puces */
-
 }
 nav a
 {
     margin: 50px;
 }
-
 nav ul
 {
     display: flex;
 }
-
 nav li
 {
     height: 100%;
@@ -154,7 +151,15 @@ form
     height: 15px;
     font-size: 1.0em;
 }
-
+#info 
+{
+    display: flex;
+}
+#info p
+{
+    vertical-align: middle;
+    transform: translateY(-10%);
+}
 .filtre
 {
     position: relative;
@@ -368,6 +373,7 @@ form
 {
     font-size: 1.8em;
 }
+
 /* ---------------------------------section 3 : Activités---------------------------------- */
 
 #section3
@@ -393,7 +399,7 @@ form
 .item-activites h3
 {
     position: absolute;
-    width: 90%;
+    width: 95%;
     bottom: 0;
     padding: 20px 20px 0px 20px;
     background: white;
@@ -461,8 +467,6 @@ footer
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    justify-content: flex-start;
-    
 }
 .item-footer
 {

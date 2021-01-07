@@ -19,6 +19,7 @@
     .carte-image2
     {
         width: 130px;
+        height: 140px;
     }
     #les-plus-populaires
     {
@@ -66,8 +67,6 @@
     }
 }
 
-
-
 @media screen and (max-width: 600px)
 {
     #bloc-page, #les-plus-populaires, #hebergements-a-marseille
@@ -83,23 +82,32 @@
     #nav-mobile
     {
         width: 100%;
-        display: flex;
+        display : flex;
     }
-    #nav-mobile a
-    {
-        width: 100%;
-    }
+
     #nav-mobile ul
     {
         width: 100%;
-        padding : 0;
+        padding: 0;
+
+    }  
+    #nav-mobile a
+    {
+        width: 50%;
+        padding: 0px 20px 10px 20px;
     }  
     .element-menu-mobile
     {
-        padding: 0px 30px 0px 30px;
-        border-bottom: #F2F2F2 3px solid;
-        margin: 0;
         padding-bottom: 10px;
+        width: 50%;
+    }
+    #nav-hebergement-mobile, #nav-activites-mobile
+    {
+        width: 50%;
+        height: 30px;
+        border-bottom: #F2F2F2 3px solid;
+        text-align: center;
+        
     }
     .menu-sinscrire
     {
@@ -109,7 +117,7 @@
     {
         border-top: none
     }
-    .element-menu-mobile:hover
+    #nav-hebergement-mobile:hover, #nav-activites-mobile:hover
     {
         border-bottom: #0065FC 3px solid;
     }
@@ -133,71 +141,109 @@
         display: none;
     }
     /* ---------------------------------section 2 et 3  ------------------------------------ */
-    #section2
-    {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
-    #conteneur1
-    {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
+    
     #hebergements-a-marseille
     {
         width: 95%;
-        margin: auto;
         background: none;
+    }
+    #les-plus-populaires
+    {
+        width: 100%;
+        border-radius: 0px; /* angles arrondis */
+        height: 650px;
+        margin: auto;
+    }
+    .conteneur2
+    {
+        justify-content: space-between;
+        margin: 0;
+        height: 600px;
+    }
+    .carte-image2
+    {
+        width: 40%;
+        height: 140px;
+    }
+    #les-plus-populaires a 
+    {
+        width: 90%;
+        height: 150px;
+    }
+    .item-populaires
+    {
+        width: 95%;
+        height: 150px;
     }
     .menu-hebergement, .menu-activités
     {
         display: none;
     }
-    .carte-image1
+    .carte-image1, .carte-image3
     {
-        height: 120px;
+        height: 130px;
     }
-    .item-hebergement, .item-populaires, .item-activites
-    {
-        width: 90%;
-        height: 200px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    
-    #les-plus-populaires
+    .item-hebergement
     {
         width: 95%;
-        border-radius: 0px; 
-        background: #F2F2F2;   
+        height: auto;
+        margin-bottom: 15px;
     }
-    #conteneur2
+    .item-activites
     {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 95%;
+        height: 190px;
+        margin-bottom: 15px;
+    }
+    .contenu-item-hebergement
+    {
+        line-height: 0.8;
+    }
+    .item-populaires
+    {
+        height: 140px;
+    }
+    .afficher-plus
+    {
+        margin: 0;
     }
     #section3
     {
         flex-direction: row;
     }
-    .carte-image3
+    #section3 h2, #section2 h2
     {
-        height: 150px;
+        padding : 10px 10px 10px 20px;
+    }
+    #section2 h2
+    {
+        margin-bottom: 20px;
+    }
+    #conteneur3img1
+    {
+        width: 100%;
+        height: auto;
+        transform: translateY(-25%);
+    }
+    #conteneur3img2
+    {
+        width: 100%;
+        height: auto;
+        transform: translateY(-40%);
     }
     #conteneur3img4
     {
         width: 100%;
         height: auto;
+        transform: translateY(-28%);
     }
-    #conteneurA, #conteneurB
+    #conteneur3img6
     {
         width: 100%;
+        height: auto;
+        transform: translateY(-25%);
     }
-    #conteneur3img1, #conteneur3img4
+    #conteneurA, #conteneurB
     {
         width: 100%;
     }
@@ -215,5 +261,12 @@
     .item-footer li
     {
         padding: 0 0 5px 0;
+    }
+}
+@media screen and (max-width: 390px)
+{
+    #conteneur2img3
+    {
+        transform: scale(1.5);
     }
 }
