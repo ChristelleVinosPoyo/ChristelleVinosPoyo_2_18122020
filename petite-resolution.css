@@ -127,14 +127,27 @@
         width: 100%;
         align-items: center;
     }
-    header, #section1
+    header
+    {
+        width: 80%;
+    }
+    #logo
+    {
+        padding-left: 20px;
+    }
+    #section1
     {
         width: 90%;
         margin: auto;
     }
+    header nav 
+    {
+        width: 40%;
+    }
     nav ul
     {
         justify-content: flex-end;
+        margin: 20px 0 0 0;
     }
     #nav-mobile
     {
@@ -311,10 +324,11 @@
     footer
     {
         flex-direction: column;
+        margin: 0;
     }
     .item-footer
     {
-        width: 100%;
+        width: 85%;
         margin: 0px 0 0px 20px;
         flex-wrap: wrap;
     }
