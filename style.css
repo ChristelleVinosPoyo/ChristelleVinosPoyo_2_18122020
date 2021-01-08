@@ -1,5 +1,3 @@
-
-
 body
 {
     font-family: 'Raleway', Arial, sans-serif;
@@ -37,18 +35,22 @@ ul
 {
     list-style-type: none; /* pour enlever les puces */
 }
-nav a
+header nav 
 {
-    margin: 50px;
+    width: 40%;
 }
+
 nav ul
 {
     display: flex;
+    justify-content: space-between;
 }
 nav li
 {
+    width: 33%;
     height: 100%;
     padding-top: 20px;
+    text-align: center;
 }
 .bleu 
 {
@@ -376,6 +378,10 @@ form
 
 /* ---------------------------------section 3 : Activités---------------------------------- */
 
+#section3-3colonnes
+{
+    display: none;
+}
 #section3
 {
     width: 100%;
@@ -391,18 +397,19 @@ form
 {
     border-radius: 20px;
     width: 23%;
-    
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     position: relative;
 }
-
-.item-activites h3
+.contenu-item-activites
 {
     position: absolute;
-    width: 95%;
+    width: 100%;
     bottom: 0;
-    padding: 20px 20px 0px 20px;
     background: white;
+}
+.contenu-item-activites h3
+{
+    margin-left: 15px;
 }
 .carte-image3
 {
@@ -452,9 +459,14 @@ form
     height: 100%;
     transform: translate(-30%, 0);
 }
-#conteneur3img5, #conteneur3img6
+#conteneur3img5 
 {
     width: 100%;
+}
+#conteneur3img6
+{
+    height: 100%;
+    transform: translateX(-10%);
 }
 
 

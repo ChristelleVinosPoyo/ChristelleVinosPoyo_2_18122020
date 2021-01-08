@@ -1,5 +1,9 @@
 @media screen and (max-width: 1280px)
 {
+    header nav 
+    {
+        width: 60%;
+    }
     #section2
     {
         flex-direction: column-reverse;
@@ -46,6 +50,18 @@
     {
         flex-wrap: wrap;
     }
+    #conteneur3img2 
+    {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+    }
+    #conteneur3img3 
+    {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
 @media screen and (min-width: 1280px) and (max-width: 1320px)
 {
@@ -66,8 +82,45 @@
         height: 150px;
     }
 }
-
-@media screen and (max-width: 600px)
+@media screen and (min-width: 421px) and (max-width: 800px)
+{
+    header nav 
+    {
+        width: 75%;
+    }
+    #section3
+    {
+        display: none;
+    }
+    #section3-3colonnes
+    {
+        display: inline
+    }
+    #conteneur3
+    {
+        width: 95%;
+        height: 530px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .item-activites
+    {
+        width: 31%;
+        height: auto;
+    }
+    #conteneur3img2, #conteneur3img3, #conteneur3img6
+    {
+        height: 200px;
+    }
+    #conteneur3img1, #conteneur3img4, #conteneur3img5
+    {
+        height: 300px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 420px)
 {
     #bloc-page, #les-plus-populaires, #hebergements-a-marseille
     {
@@ -79,17 +132,20 @@
         width: 90%;
         margin: auto;
     }
+    nav ul
+    {
+        justify-content: flex-end;
+    }
     #nav-mobile
     {
         width: 100%;
         display : flex;
     }
-
     #nav-mobile ul
     {
         width: 100%;
         padding: 0;
-
+        
     }  
     #nav-mobile a
     {
@@ -219,17 +275,20 @@
     {
         margin-bottom: 20px;
     }
-    #conteneur3img1
+    #conteneur3
     {
-        width: 100%;
-        height: auto;
-        transform: translateY(-25%);
+        align-items: center;
+        justify-content: center;
     }
-    #conteneur3img2
+    #conteneur1 img 
+    {
+        transform: translateY(-40%);
+    }
+    #conteneur3 img 
     {
         width: 100%;
-        height: auto;
-        transform: translateY(-40%);
+        height: 180px;
+        object-fit: cover;
     }
     #conteneur3img4
     {
@@ -242,10 +301,11 @@
         width: 100%;
         height: auto;
         transform: translateY(-25%);
-    }
+    } 
     #conteneurA, #conteneurB
     {
         width: 100%;
+        align-items: center;
     }
     /* ------------------------------------footer-------------------------------------- */
     footer
