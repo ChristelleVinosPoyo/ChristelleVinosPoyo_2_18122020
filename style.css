@@ -23,13 +23,14 @@ a /* pour enlever la mise en forme des liens */
 header
 {
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
 #logo
 {
     width: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 ul 
 {
@@ -52,13 +53,18 @@ nav li
     padding-top: 20px;
     text-align: center;
 }
-.bleu 
+.menu-sinscrire a
 {
     color: #0065FC;
+    font-weight: bold;
 }
 nav li:hover
 {
     border-top: #0065FC 3px solid;
+}
+nav a:hover
+{
+    color: #0065FC;
 }
 
 /* ---------------------------------Nav pour version mobile-------------------------------- */
