@@ -62,7 +62,7 @@ nav li:hover
 {
     border-top: #0065FC 3px solid;
 }
-nav a:hover
+nav li:hover a
 {
     color: #0065FC;
 }
@@ -286,8 +286,6 @@ form
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
 }
-
-
 .header-les-plus-populaires
 {
     position: relative;
